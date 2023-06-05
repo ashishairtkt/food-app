@@ -1,7 +1,7 @@
 {
   "name": "food-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/ashishairtkt/food-app",
+  "homepage": "https://github.com/ashishairtkt/food-app/SignUp",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
