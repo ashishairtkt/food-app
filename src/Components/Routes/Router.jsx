@@ -6,6 +6,7 @@ import PrivateRoute from "./PrivateRoute";
 import OpenRoutes from "./PublicRoute";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
+import Header from "../Pages/Header";
 
 const Routing = () => {
   return (
@@ -29,10 +30,19 @@ const Routing = () => {
         ></Route>
 
         <Route
-          path="/SignUp"
+          path="/food-app"
           element={
             <OpenRoutes>
               <SignUp />
+            </OpenRoutes>
+          }
+        ></Route>
+
+        <Route
+          path="/Header"
+          element={
+            <OpenRoutes>
+              <Header />
             </OpenRoutes>
           }
         ></Route>

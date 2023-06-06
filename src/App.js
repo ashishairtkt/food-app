@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.scss";
 import Router from "./Components/Routes/Router";
 import { BrowserRouter } from "react-router-dom";
 

@@ -1,0 +1,12 @@
+// bootstrap includes 
+@import '~bootstrap/scss/bootstrap';
+
+@import url(./Components/Assets/Scss/_AppStyle.scss);
+
+body{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
