@@ -5,20 +5,21 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import Logo from "../Assets/Images/logo.svg";
+import { useState } from "react";
+import Logo from "../Assets/Images/logo.png";
 import Helplogo from "../Assets/Images/helplogo.svg";
 import { ReactComponent as Offerlogo } from "../Assets/Images/offer.svg";
 import Userlogo from "../Assets/Images/user.svg";
 import Cart from "../Assets/Images/cart.svg";
 import Badge from "react-bootstrap/Badge";
+import ReusableOffcanvas from "../Hooks/Offcanvas";
 
 function Header() {
-  let expand = "md";
-  const logoStyles = {
-    fill: "blue",
-    width: "100px",
-    height: "100px",
-  };
+  let expand = "lg";
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <Navbar key={expand} expand={expand} className="mb-3 HeaderSection">
@@ -26,11 +27,24 @@ function Header() {
           <Navbar.Brand href="#">
             <img src={Logo} alt="logo" className="main-logo" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+          <Navbar.Brand>
+            <ReusableOffcanvas
+              id="1"
+              buttonText="Launch 1"
+              offcanvasTitle="Offcanvas 1"
+              offcanvasText="Some text as a placeholder..."
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls={`offcanvasNavbar-expand-${expand}-head`}
+            onClick={handleShow}
+          />
           <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-${expand}`}
+            id={`offcanvasNavbar-expand-${expand}-head`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
             placement="end"
+            show={show}
+            onHide={handleClose}
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
@@ -63,15 +77,6 @@ function Header() {
                   &nbsp;Cart <Badge bg="secondary">9</Badge>
                 </Nav.Link>
               </Nav>
-              {/* <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form> */}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

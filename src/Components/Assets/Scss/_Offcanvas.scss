@@ -1,0 +1,48 @@
+.input-container{
+    border: 1px solid #d4d5d9;
+    padding: 0;
+    display: flex;
+    position: relative;
+    transform: translateZ(0);
+
+    span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 18px;
+        margin-right: 18px;
+        font-weight: 500;
+        color: #fc8019;
+        cursor: pointer;
+    }
+
+.inputField{
+    background-color: transparent;
+    line-height: normal;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    font-size: 17px;
+    margin: 0;
+    padding: 0 20px;
+    padding-right: 72px;
+   
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+input[type="text"]:focus {
+   
+    box-shadow: 0 1px 7px 1px #d4d5d9 ;
+    outline: none; /* Optionally remove the default browser outline */
+  }
+
+
+
+}
