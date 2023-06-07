@@ -7,6 +7,7 @@ import OpenRoutes from "./PublicRoute";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import Header from "../Pages/Header";
+import Footer from "../Pages/Footer";
 
 const Routing = () => {
   return (
@@ -43,6 +44,15 @@ const Routing = () => {
           element={
             <OpenRoutes>
               <Header />
+            </OpenRoutes>
+          }
+        ></Route>
+
+        <Route
+          path="/Footer"
+          element={
+            <OpenRoutes>
+              <Footer />
             </OpenRoutes>
           }
         ></Route>
