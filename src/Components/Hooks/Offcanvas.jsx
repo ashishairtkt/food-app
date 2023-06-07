@@ -13,18 +13,24 @@ function ReusableOffcanvas({ id, buttonText, offcanvasTitle, offcanvasText }) {
 
   return (
     <>
-      <Button
+      {/* <Button
         variant="primary"
         onClick={handleShow}
         responsive="lg"
         id={buttonId}
       >
         {buttonText}
-      </Button>
+      </Button> */}
+
+      <div className="navigation-location" onClick={handleShow}>
+        <span className="main-loc">Vasant Kunj</span>
+        <span className="main-sum">New Delhi, Delhi, India</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
 
       <Offcanvas show={show} onHide={handleClose} id={offcanvasId}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>{offcanvasTitle}</Offcanvas.Title>
+          {/* <Offcanvas.Title>{offcanvasTitle}</Offcanvas.Title> */}
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="input-container">
@@ -42,7 +48,29 @@ function ReusableOffcanvas({ id, buttonText, offcanvasTitle, offcanvasText }) {
               ""
             )}
           </div>
-          div
+          <div className="location-container">
+            <span>
+              <i class="fa-solid fa-location-crosshairs location-icon"></i>
+            </span>
+            <span>
+              <h5>Get current location</h5>
+              <p>Using GPS</p>
+            </span>
+          </div>
+
+          <div className="recentsearch-container">
+            <div className="recentsearchBlock">
+              <p className="search-heading">RECENT SEARCHES</p>
+
+              <div className="address-para">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>
+                  <h5>Vansant Kunj</h5>
+                  <p>New Delhi, Delhi, India</p>
+                </span>
+              </div>
+            </div>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>

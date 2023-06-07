@@ -4,7 +4,9 @@
     display: flex;
     position: relative;
     transform: translateZ(0);
-
+    position: sticky;
+    background: #fff;
+    z-index: 1;
     span{
         position: absolute;
         top: 0;
@@ -43,6 +45,139 @@ input[type="text"]:focus {
     outline: none; /* Optionally remove the default browser outline */
   }
 
+ 
 
 
+
+}
+
+.location-container{
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid #d4d5d9;
+    padding: 20px;
+    cursor: pointer;
+    
+
+    
+
+
+    .location-icon{
+        font-size: 16px;
+        color: #282c3f;
+        
+        padding-right: 10px;
+
+    }
+    h5{
+        font-size: 16px;
+        font-weight: 500;
+        color: #282c3f;
+    }
+
+    p{
+        color:#93959f;
+        font-size: 13px;
+        margin-bottom: 0;
+       
+    }
+  }
+  .location-container:hover{
+    h5{
+        color: #fc8019;
+    }
+}
+
+.recentsearch-container{
+    margin-top: 20px;
+    border: 1px solid #d4d5d9;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+
+    .search-heading{
+        margin-left: 25px;
+        font-size: 12px;
+        color: #7e808c;
+    
+    }
+
+    .address-para{
+        display: flex;
+
+        padding-bottom: 10px;
+
+
+
+    i,h5{
+        font-size: 16px;
+        color: #282c3f;
+        padding-right: 10px;
+    }
+
+    p{
+        color:#93959f;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+   
+    }
+    .recentsearchBlock{
+       
+        margin-left: 20px;
+     
+    
+    }
+    .recentsearchBlock:after{
+    content: "";
+    display: block;
+    border-top: 1px dashed #a9abb2;
+    position: relative;
+    margin-left: 25px;
+ 
+    }
+   
+}
+
+.recentsearch-container:hover{
+    h5{
+        color: #fc8019;
+    }
+}
+
+.navigation-location{
+    cursor: pointer;
+    font-size: 17px;
+    span{
+        margin-right: 10px;
+    }
+
+    .main-loc{
+        font-weight: 700;
+        color: #3d4152;
+        padding-bottom: 2px;
+       
+        border-bottom: 2px solid #3d4152;
+    
+
+  
+    }
+
+    .main-sum{
+        font-size: 15px;
+        color: #686b78;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    i{
+        color: #fc8019;
+    }
+}
+.navigation-location:hover{
+    .main-loc{
+        color: #fc8019;
+        border-bottom: 2px solid #fc8019;
+    }
 }

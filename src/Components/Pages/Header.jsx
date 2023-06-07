@@ -7,10 +7,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useState } from "react";
 import Logo from "../Assets/Images/logo.png";
-import Helplogo from "../Assets/Images/helplogo.svg";
+import { ReactComponent as Helplogo } from "../Assets/Images/helplogo.svg";
 import { ReactComponent as Offerlogo } from "../Assets/Images/offer.svg";
-import Userlogo from "../Assets/Images/user.svg";
-import Cart from "../Assets/Images/cart.svg";
+import { ReactComponent as Userlogo } from "../Assets/Images/user.svg";
+import { ReactComponent as Cart } from "../Assets/Images/cart.svg";
 import Badge from "react-bootstrap/Badge";
 import ReusableOffcanvas from "../Hooks/Offcanvas";
 
@@ -63,17 +63,17 @@ function Header() {
                 </Nav.Link>
                 <Nav.Link href="#action2">
                   {" "}
-                  {/* <Helplogo className="headerlinksIcon" /> */}
+                  <Helplogo className="headerlinksIcon" />
                   &nbsp;Help
                 </Nav.Link>
                 <Nav.Link href="#action2">
                   {" "}
-                  {/* <Userlogo className="headerlinksIcon" /> */}
+                  <Userlogo className="headerlinksIcon" />
                   &nbsp;Sign In
                 </Nav.Link>
                 <Nav.Link href="#action2">
                   {" "}
-                  {/* <Cart className="headerlinksIcon" /> */}
+                  <Cart className="headerlinksIcon" />
                   &nbsp;Cart <Badge bg="secondary">9</Badge>
                 </Nav.Link>
               </Nav>
