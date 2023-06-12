@@ -22,7 +22,7 @@ function Header() {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Navbar key={expand} expand={expand} className="mb-3 HeaderSection">
+      <Navbar key={expand} expand={expand} className="HeaderSection">
         <Container>
           <Navbar.Brand href="#">
             <img src={Logo} alt="logo" className="main-logo" />

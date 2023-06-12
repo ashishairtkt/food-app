@@ -8,10 +8,12 @@ import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import Header from "../Pages/Header";
 import Footer from "../Pages/Footer";
+import CollectionSlider from "../Pages/CollectionSlider";
 
 const Routing = () => {
   return (
     <>
+      <Header />
       <Routes>
         <Route
           path="/"
@@ -53,6 +55,14 @@ const Routing = () => {
           element={
             <OpenRoutes>
               <Footer />
+            </OpenRoutes>
+          }
+        ></Route>
+        <Route
+          path="/CollectionSlider"
+          element={
+            <OpenRoutes>
+              <CollectionSlider />
             </OpenRoutes>
           }
         ></Route>
