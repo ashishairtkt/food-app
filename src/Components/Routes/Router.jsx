@@ -9,6 +9,7 @@ import SignUp from "../Pages/SignUp";
 import Header from "../Pages/Header";
 import Footer from "../Pages/Footer";
 import CollectionSlider from "../Pages/CollectionSlider";
+import FilterStrip from "../Pages/FilterStrip";
 
 const Routing = () => {
   return (
@@ -63,6 +64,14 @@ const Routing = () => {
           element={
             <OpenRoutes>
               <CollectionSlider />
+            </OpenRoutes>
+          }
+        ></Route>
+        <Route
+          path="/FilterStrip"
+          element={
+            <OpenRoutes>
+              <FilterStrip />
             </OpenRoutes>
           }
         ></Route>
