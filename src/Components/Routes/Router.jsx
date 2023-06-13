@@ -27,7 +27,7 @@ const Routing = () => {
           }
         ></Route>
         <Route
-          path="/Landing"
+          path="/food-app"
           element={
             <OpenRoutes>
               <Landing />
@@ -35,14 +35,14 @@ const Routing = () => {
           }
         ></Route>
 
-        <Route
+        {/* <Route
           path="/food-app"
           element={
             <OpenRoutes>
               <SignUp />
             </OpenRoutes>
           }
-        ></Route>
+        ></Route> */}
 
         <Route
           path="/Header"
