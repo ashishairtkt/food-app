@@ -10,6 +10,8 @@ import Header from "../Pages/Header";
 import Footer from "../Pages/Footer";
 import CollectionSlider from "../Pages/CollectionSlider";
 import FilterStrip from "../Pages/FilterStrip";
+import RestroCards from "../Pages/RestroCards";
+import ShowRestrorentList from "../Pages/ShowRestrorentList";
 
 const Routing = () => {
   return (
@@ -72,6 +74,15 @@ const Routing = () => {
           element={
             <OpenRoutes>
               <FilterStrip />
+            </OpenRoutes>
+          }
+        ></Route>
+
+        <Route
+          path="/ShowRestrorentList"
+          element={
+            <OpenRoutes>
+              <ShowRestrorentList />
             </OpenRoutes>
           }
         ></Route>
