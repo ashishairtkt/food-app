@@ -1,11 +1,20 @@
-import React from 'react';
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import CollectionSlider from "./CollectionSlider";
+import FilterStrip from "./FilterStrip";
+import ShowRestrorentList from "./ShowRestrorentList";
 
 const LandingPage = () => {
-    return (
-        <div>
-            LandingPage
-        </div>
-    );
-}
+  return (
+    <>
+      <Header />
+      <CollectionSlider />
+      <FilterStrip />
+      <ShowRestrorentList />
+      <Footer />
+    </>
+  );
+};
 
 export default LandingPage;

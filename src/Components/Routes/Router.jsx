@@ -16,7 +16,7 @@ import ShowRestrorentList from "../Pages/ShowRestrorentList";
 const Routing = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route
           path="/"
@@ -29,9 +29,9 @@ const Routing = () => {
         <Route
           path="/Landing"
           element={
-            <PrivateRoute>
+            <OpenRoutes>
               <Landing />
-            </PrivateRoute>
+            </OpenRoutes>
           }
         ></Route>
 
