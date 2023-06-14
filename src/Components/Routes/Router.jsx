@@ -19,7 +19,7 @@ const Routing = () => {
       {/* <Header /> */}
       <Routes>
         <Route
-          path="/"
+          path="/Login"
           element={
             <OpenRoutes>
               <Login />
@@ -27,7 +27,7 @@ const Routing = () => {
           }
         ></Route>
         <Route
-          path="/food-app"
+          path="/"
           element={
             <OpenRoutes>
               <Landing />

@@ -7,8 +7,11 @@
     .restro-img {
         width: 250px;
 
-        img{
+        img {
             width: 100%;
+
+            object-fit: cover;
+            height: 200px;
         }
     }
 
@@ -35,37 +38,32 @@
             display: grid;
             grid-template-columns: auto auto auto;
             gap: 30px;
-          
+
             align-items: center;
-            
+
             line-height: 1.5;
             padding-bottom: 10px;
-
-          
         }
         .star-rating {
             background-color: #48c479;
             color: #fff;
             padding: 1px;
 
-            i{
+            i {
                 font-size: 10px;
             }
-         
         }
     }
-    .restro-card-bottom{
+    .restro-card-bottom {
         display: none;
-      
     }
 }
 
-
-.restrocard-container:hover{
+.restrocard-container:hover {
     border-color: #d3d5df;
-    box-shadow: 0 4px 7px 0 rgba(218,220,230,.6);
+    box-shadow: 0 4px 7px 0 rgba(218, 220, 230, 0.6);
 
-    .restro-card-bottom{
+    .restro-card-bottom {
         display: block;
         float: right;
         text-transform: uppercase;
@@ -81,7 +79,6 @@
     }
 }
 
-.url-tag{
-    text-decoration: none
-    ;
+.url-tag {
+    text-decoration: none;
 }

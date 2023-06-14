@@ -12,7 +12,7 @@ import { ReactComponent as Offerlogo } from "../Assets/Images/offer.svg";
 import { ReactComponent as Userlogo } from "../Assets/Images/user.svg";
 import { ReactComponent as Cart } from "../Assets/Images/cart.svg";
 import Badge from "react-bootstrap/Badge";
-import ReusableOffcanvas from "../Hooks/Offcanvas";
+import ReusableOffcanvas from "../Utils/Offcanvas";
 
 function Header() {
   let expand = "lg";

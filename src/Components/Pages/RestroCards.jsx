@@ -9,16 +9,17 @@ const RestroCards = ({
   deliveryTime,
   priceForTwo,
   onViewDetails,
+  itemData,
 }) => {
   const isDataAvailable =
     imageUrl && name && cuisine && rating && deliveryTime && priceForTwo;
-
+  console.warn("item", itemData);
   return (
     <a href="#" className="url-tag">
       <div className="restrocard-container">
         <div className="restro-img">
           {isDataAvailable ? (
-            <img src={imageUrl} alt="restro-img" />
+            <img src={itemData.featured_image} alt="restro-img" />
           ) : (
             <Skeleton width={250} height={200} />
           )}
@@ -26,15 +27,18 @@ const RestroCards = ({
         <div className="details">
           {isDataAvailable ? (
             <>
-              <h4>{name}</h4>
-              <p>{cuisine}</p>
+              <h4>{itemData.name}</h4>
+              <p>{itemData.cuisine}</p>
 
               <div className="details-para">
                 <div className="star-rating">
-                  &nbsp;<i className="fa-solid fa-star"></i> {rating}
+                  &nbsp;<i className="fa-solid fa-star"></i>{" "}
+                  {itemData.user_rating.aggregate_rating}
                 </div>
                 <div className="timing">• &nbsp;{deliveryTime}</div>
-                <div className="priceApprox">• &nbsp;{priceForTwo} FOR TWO</div>
+                <div className="priceApprox">
+                  • &nbsp;{itemData.average_cost_for_two} FOR TWO
+                </div>
               </div>
             </>
           ) : (
