@@ -25,7 +25,7 @@ function ReusableOffcanvas({ id, buttonText, offcanvasTitle, offcanvasText }) {
       <div className="navigation-location" onClick={handleShow}>
         <span className="main-loc">Vasant Kunj</span>
         <span className="main-sum">New Delhi, Delhi, India</span>
-        <i class="fa-solid fa-chevron-down"></i>
+        <i className="fa-solid fa-chevron-down"></i>
       </div>
 
       <Offcanvas show={show} onHide={handleClose} id={offcanvasId}>
@@ -50,7 +50,7 @@ function ReusableOffcanvas({ id, buttonText, offcanvasTitle, offcanvasText }) {
           </div>
           <div className="location-container">
             <span>
-              <i class="fa-solid fa-location-crosshairs location-icon"></i>
+              <i className="fa-solid fa-location-crosshairs location-icon"></i>
             </span>
             <span>
               <h5>Get current location</h5>
@@ -63,7 +63,7 @@ function ReusableOffcanvas({ id, buttonText, offcanvasTitle, offcanvasText }) {
               <p className="search-heading">RECENT SEARCHES</p>
 
               <div className="address-para">
-                <i class="fa-solid fa-clock-rotate-left"></i>
+                <i className="fa-solid fa-clock-rotate-left"></i>
                 <span>
                   <h5>Vansant Kunj</h5>
                   <p>New Delhi, Delhi, India</p>

@@ -13,7 +13,7 @@ const RestroCards = ({
 }) => {
   const isDataAvailable =
     imageUrl && name && cuisine && rating && deliveryTime && priceForTwo;
-  console.warn("item", itemData);
+
   return (
     <a href="#" className="url-tag">
       <div className="restrocard-container">

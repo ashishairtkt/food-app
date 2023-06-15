@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import FilterIcon from "../Assets/Images/filter.svg";
 
-const FilterStrip = () => {
-  const [activeTab, setActiveTab] = useState("Relevance");
-
+const FilterStrip = ({ setActiveTab, activeTab }) => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
