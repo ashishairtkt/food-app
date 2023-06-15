@@ -1,0 +1,31 @@
+.menuContainer{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding:  10px 0px;
+    align-items: center;
+  ol{
+    margin-bottom: 0;
+  }
+
+  .leftmenu{
+    display: flex;
+  }
+  .leftmenu ul{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .leftmenu ul li a{
+    color: #93959f;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .leftmenu ul li.active{
+    color: #282c3f;
+    font-size: 13px;
+    display: contents;
+  }
+
+
+}

@@ -12,6 +12,7 @@ import CollectionSlider from "../Pages/CollectionSlider";
 import FilterStrip from "../Pages/FilterStrip";
 import RestroCards from "../Pages/RestroCards";
 import ShowRestrorentList from "../Pages/ShowRestrorentList";
+import MenuSearchHeader from "../Utils/MenuSearchHeader";
 
 const Routing = () => {
   return (
@@ -83,6 +84,14 @@ const Routing = () => {
           element={
             <OpenRoutes>
               <ShowRestrorentList />
+            </OpenRoutes>
+          }
+        ></Route>
+        <Route
+          path="/MenuSearchHeader"
+          element={
+            <OpenRoutes>
+              <MenuSearchHeader />
             </OpenRoutes>
           }
         ></Route>
