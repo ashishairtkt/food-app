@@ -13,6 +13,8 @@ import FilterStrip from "../Pages/FilterStrip";
 import RestroCards from "../Pages/RestroCards";
 import ShowRestrorentList from "../Pages/ShowRestrorentList";
 import MenuSearchHeader from "../Utils/MenuSearchHeader";
+import TodoComponent from "../Todo/TodoComponent";
+import TodoWithRedux from "../Todo/TodoWithRedux";
 
 const Routing = () => {
   return (
@@ -92,6 +94,22 @@ const Routing = () => {
           element={
             <OpenRoutes>
               <MenuSearchHeader />
+            </OpenRoutes>
+          }
+        ></Route>
+        <Route
+          path="/TodoComponent"
+          element={
+            <OpenRoutes>
+              <TodoComponent />
+            </OpenRoutes>
+          }
+        ></Route>
+        <Route
+          path="/TodoWithRedux"
+          element={
+            <OpenRoutes>
+              <TodoWithRedux />
             </OpenRoutes>
           }
         ></Route>

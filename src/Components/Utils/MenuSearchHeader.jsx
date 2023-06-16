@@ -6,7 +6,7 @@ const MenuSearchHeader = () => {
       <div className="leftmenu">
         <ul>
           <li>
-            {" "}
+           
             <a href="">Home</a>&nbsp;/&nbsp;
           </li>
 
