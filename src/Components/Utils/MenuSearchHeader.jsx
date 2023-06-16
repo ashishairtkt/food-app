@@ -1,12 +1,24 @@
-import React from "react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import React, { useState, useEffect } from "react";
+
 const MenuSearchHeader = () => {
+  const [small, setSmall] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      console.log("Adding scroll event listener");
+      window.addEventListener("scroll", () => {
+        console.log("Scroll event triggered");
+        console.log("window.pageYOffset:", window.pageYOffset);
+        console.log("Is small:", window.pageYOffset > 200);
+        setSmall(window.pageYOffset > 200);
+      });
+    }
+  }, []);
   return (
     <div className="menuContainer">
       <div className="leftmenu">
         <ul>
           <li>
-           
             <a href="">Home</a>&nbsp;/&nbsp;
           </li>
 

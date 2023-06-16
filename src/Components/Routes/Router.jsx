@@ -15,6 +15,7 @@ import ShowRestrorentList from "../Pages/ShowRestrorentList";
 import MenuSearchHeader from "../Utils/MenuSearchHeader";
 import TodoComponent from "../Todo/TodoComponent";
 import TodoWithRedux from "../Todo/TodoWithRedux";
+import UsememoLearn from "../HooksunderStanding/UsememoLearn";
 
 const Routing = () => {
   return (
@@ -38,14 +39,14 @@ const Routing = () => {
           }
         ></Route>
 
-        {/* <Route
-          path="/food-app"
+        <Route
+          path="/UsememoLearn"
           element={
             <OpenRoutes>
-              <SignUp />
+              <UsememoLearn />
             </OpenRoutes>
           }
-        ></Route> */}
+        ></Route>
 
         <Route
           path="/Header"
